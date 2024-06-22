@@ -1,94 +1,178 @@
+/* style.css */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url(https://th.bing.com/th/id/OIP.x3E-7HPB1pps7_kOtsVTnQHaC1?w=349&h=134&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+    background-position: center;
 }
+
 
 .container {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #dbd5d5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-color: #3377c0;
 }
 
-h1 {
-  text-align: center;
-  color: #333;
+.contact-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.contact-item:last-child {
+    border-bottom: none;
 }
 
-.form input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.button {
+    background-color: #3377c0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-color: black;
 }
 
-.form button {
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.button:hover {
+    background-color: #3377c0;
 }
 
-.form button:hover {
-  background-color: #0056b3;
+.input-group {
+    margin-bottom: 10px;
 }
 
-.contact-list {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.contact-card {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
+.input-group input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    font-size: 16px;
 }
 
-.contact-card img {
-  width: 100%;
-  height: auto;
+.input-group input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-.contact-info {
-  padding: 10px;
-  text-align: center;
+.input-group input[type="submit"]:hover {
+    background-color: #218838;
+}
+.container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info h2 {
-  margin: 10px 0;
-  color: #333;
+.input-group {
+    margin-bottom: 10px;
 }
 
-.contact-info p {
-  margin: 5px 0;
-  color: #666;
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.contact-info button {
-  padding: 5px 10px;
-  background-color: #ff9800;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.input-group input[type="text"],
+.input-group input[type="number"],
+.input-group input[type="file"],
+.input-group input[type="submit"],
+.button,
+.button-secondary {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.contact-info button:hover {
-  background-color: #e68900;
+.button {
+    background-color:#3377c0;
+    color: #fff;
+    cursor: pointer;
 }
+
+.button-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3377c0;
+}
+
+.button-secondary:hover {
+    background-color: #3377c0;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+}
+
+.saved-contacts-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.saved-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.saved-contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.contact-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-details strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.contact-details span {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 10px;
+}
+
